@@ -6,7 +6,7 @@ from delete import delete_user
 
 def main():
     while True:
-        print("\nMenú de Usuario")
+        print("\nMenu de Usuario")
         print("1. Crear usuario")
         print("2. Leer usuarios")
         print("3. Actualizar usuario")
@@ -27,11 +27,11 @@ def main():
 
         elif opcion == "3":
             user_id = int(input("ID del usuario a actualizar: "))
-            nom = input("Nombre (deja vacío si no deseas cambiarlo): ") or None
-            cognom = input("Apellido (deja vacío si no deseas cambiarlo): ") or None
-            edat = input("Edad (deja vacío si no deseas cambiarlo): ")
+            nom = input("Nombre (dejar vacío si no deseas cambiarlo): ") or None
+            cognom = input("Apellido (dejar vacío si no deseas cambiarlo): ") or None
+            edat = input("Edad (dejar vacío si no deseas cambiarlo): ")
             edat = int(edat) if edat else None
-            email = input("Email (deja vacío si no deseas cambiarlo): ") or None
+            email = input("Email (dejar vacío si no deseas cambiarlo): ") or None
             update_user(user_id, nom, cognom, edat, email)
 
         elif opcion == "4":
@@ -43,7 +43,7 @@ def main():
             break
 
         else:
-            print("Opción no válida, por favor selecciona una opción válida.")
+            print("Opcion no valida, por favor selecciona una opcion valida.")
 
 if __name__ == "__main__":
     main()
